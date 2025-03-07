@@ -42,3 +42,8 @@ print(f"Precision: {precision:.4f}")
 print(f"Accuracy: {accuracy:.4f}")
 print(f"F1 Score: {f1:.4f}")
 print(f"Recall: {recall:.4f}")
+
+#Example data, male, 25 years, 3rd class
+new_passenger = [[1, 1, 25, 0, 0, 7.25, 0, 1]]
+prediction = model.predict(new_passenger)
+print("Survival Prediction:", prediction[0])  # 0 = Did not survive, 1 = Survived
